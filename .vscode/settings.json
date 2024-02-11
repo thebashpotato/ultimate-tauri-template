@@ -1,0 +1,30 @@
+{
+  "files.insertFinalNewline": true,
+  "editor.formatOnSave": true,
+  "files.trimTrailingWhitespace": true,
+  "files.exclude": {
+    "target_ra/**": true,
+    "target/**": true
+  },
+  // Tell Rust Analyzer to use its own target directory, so we don't need to wait for it to finish wen we want to `cargo run`
+  "rust-analyzer.check.overrideCommand": [
+    "cargo",
+    "clippy",
+    "--target-dir=target_ra",
+    "--workspace",
+    "--message-format=json",
+    "--all-targets"
+  ],
+  "rust-analyzer.cargo.buildScripts.overrideCommand": [
+    "cargo",
+    "check",
+    "--quiet",
+    "--target-dir=target_ra",
+    "--workspace",
+    "--message-format=json",
+    "--all-targets"
+  ],
+  "prettier.configPath": "./tauri-template-ui/.prettierrc",
+  "prettier.prettierPath": "./tauri-template-ui/node_modules/prettier/index.cjs",
+  "prettier.useEditorConfig": false
+}

@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "tauri-apps.tauri-vscode",
+    "vadimcn.vscode-lldb",
+    "rust-lang.rust-analyzer",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "ZixuanChen.vitest-explorer",
+    "EditorConfig.EditorConfig",
+    "skellock.just"
+  ]
+}

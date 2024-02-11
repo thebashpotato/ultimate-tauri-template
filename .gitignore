@@ -1,0 +1,14 @@
+# will have compiled rust files and executables
+/target/
+/target_ra/
+/node_modules/
+
+# editors
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+.idea
+
+.DS_Store

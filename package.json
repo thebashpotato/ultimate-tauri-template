@@ -1,0 +1,15 @@
+{
+  "name": "tauri-template",
+  "private": true,
+  "scripts": {
+    "setup" : "pnpm install && cd tauri-template-ui && pnpm install",
+    "lint": "pnpm --filter @tauri-template/ui run lint",
+    "format": "pnpm --filter @tauri-template/ui run format",
+    "dev": "pnpm --filter @tauri-template/ui run dev",
+    "build": "pnpm --filter @tauri-template/ui run build",
+    "tauri": "tauri"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.5.9"
+  }
+}
