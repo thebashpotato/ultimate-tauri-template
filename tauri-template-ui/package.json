@@ -12,7 +12,9 @@
     "tauri": "tauri"
   },
   "dependencies": {
+    "@nextui-org/react": "^2.2.9",
     "@tauri-apps/api": "^1.5.3",
+    "framer-motion": "^11.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

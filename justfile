@@ -15,3 +15,10 @@ lint:
 # Launch development build
 dev:
     pnpm run tauri dev
+
+# Remove Rust and Node artifacts
+clean:
+    rm -rf target
+    rm -rf target_ra
+    rm -rf node_modules
+    rm -rf tauri-template-ui/node_modules
