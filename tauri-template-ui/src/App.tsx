@@ -1,7 +1,7 @@
 import { useState } from "react";
 import reactLogo from "/react.svg";
 import viteLogo from "/vite.svg";
-import { Button } from "./components/ui/button";
+import { Button } from "@/components/ui/button";
 
 const App = (): JSX.Element => {
   const [count, setCount] = useState(0);
