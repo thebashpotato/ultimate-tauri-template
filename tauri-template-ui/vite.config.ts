@@ -1,3 +1,4 @@
+import path from "path";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import eslintPlugin from "@nabla/vite-plugin-eslint";
@@ -29,5 +30,10 @@ export default defineConfig({
     sourcemap: !!process.env.TAURI_DEBUG
   },
 
-  plugins: [react(), eslintPlugin()]
+  plugins: [react(), eslintPlugin()],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src")
+    }
+  }
 });
