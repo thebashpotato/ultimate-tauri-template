@@ -11,14 +11,16 @@ module.exports = {
   },
   parser: "@typescript-eslint/parser",
   parserOptions: {
+    project: ["./tsconfig.json"],
     ecmaFeatures: {
       jsx: true
     }
   },
-  plugins: ["react", "react-hooks", "prettier", "@typescript-eslint"],
+  ignorePatterns: ["vite.config.ts"],
+  plugins: ["react", "react-hooks", "prettier", "@typescript-eslint/eslint-plugin"],
   extends: [
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-type-checked",
     "plugin:prettier/recommended",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
