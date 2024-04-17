@@ -16,9 +16,14 @@ lint:
 	pnpm run lint
 
 # Launch development build
-dev:
+dev: setup
 	fnm use
 	pnpm run tauri dev
+
+# Builds release bundle
+release: setup
+	fnm use
+	NO_STRIP=1 pnpm run tauri build
 
 # Remove Rust and Node artifacts
 clean:
@@ -26,3 +31,5 @@ clean:
 	rm -rf target_ra
 	rm -rf node_modules
 	rm -rf tauri-template-ui/node_modules
+	rm -rf tauri-template-ui/dist
+
